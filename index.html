@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 meses contigo, Mi niña 🤍</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      color: #592d40;
+      background: #fff4f6;
+      text-align: center;
+    }
+
+    header {
+      padding: 75px 20px;
+      color: white;
+      background: linear-gradient(135deg, #a83f62, #f19ab2);
+    }
+
+    h1 { font-size: clamp(35px, 7vw, 58px); margin: 15px 0; }
+    h2 { color: #a83f62; }
+    p { line-height: 1.8; }
+
+    .heart { font-size: 40px; }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 25px 18px;
+    }
+
+    section {
+      background: white;
+      padding: 28px 20px;
+      margin: 25px 0;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px #a83f6212;
+    }
+
+    button {
+      border: 0;
+      border-radius: 30px;
+      background: #a83f62;
+      color: white;
+      padding: 13px 22px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 8px;
+    }
+
+    button:hover { background: #842b4a; }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 270px;
+      object-fit: cover;
+      border-radius: 14px;
+      background: #ffe0e8;
+    }
+
+    .reason {
+      padding: 12px;
+      margin: 10px 0;
+      background: #fff0f4;
+      border-radius: 12px;
+    }
+
+    #letter {
+      display: none;
+      text-align: left;
+      white-space: pre-line;
+      line-height: 2;
+    }
+
+    footer { padding: 30px; color: #a83f62; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="heart">🤍</div>
+    <p>Para la persona más especial de mi vida</p>
+    <h1>Felices 10 meses, Mi niña 🤍</h1>
+    <p>La distancia nos separa por ahora, pero mi corazón siempre está contigo.</p>
+    <button onclick="document.getElementById('recuerdo').scrollIntoView({behavior:'smooth'})">
+      Nuestra historia 🤍
+    </button>
+  </header>
+
+  <main>
+    <section>
+      <h2>Diez meses de nosotros 🤍</h2>
+      <p>
+        Diez meses compartiendo sentimientos, momentos, risas y recuerdos.
+        Aunque no siempre podamos estar juntos físicamente, quiero que sepas
+        que eres alguien muy especial para mí. Esta pequeña página es una
+        forma de recordarte cuánto significas en mi vida.
+      </p>
+    </section>
+
+    <section id="recuerdo">
+      <h2>Nuestros recuerdos 📸</h2>
+      <p>Aquí estarán nuestras fotos favoritas, esos momentos que quiero guardar para siempre.</p>
+
+      <div class="gallery">
+        <img src="fotos/foto1.jpg" alt="Nuestro recuerdo número uno">
+        <img src="fotos/foto2.jpg" alt="Nuestro recuerdo número dos">
+        <img src="fotos/foto3.jpg" alt="Nuestro recuerdo número tres">
+        <img src="fotos/foto4.jpg" alt="Nuestro recuerdo número cuatro">
+        <img src="fotos/foto5.jpg" alt="Nuestro recuerdo número cinco">
+        <img src="fotos/foto6.jpg" alt="Nuestro recuerdo número seis">
+      </div>
+      <p><small>Pronto llenaremos este espacio con nuestras fotos reales 🤍</small></p>
+    </section>
+
+    <section>
+      <h2>10 razones por las que te amo 🤍</h2>
+
+      <div class="reason">1. Por la persona que eres.</div>
+      <div class="reason">2. Por tu forma de hacerme sonreír.</div>
+      <div class="reason">3. Por los momentos bonitos que compartimos.</div>
+      <div class="reason">4. Por cómo haces que te extrañe incluso más.</div>
+      <div class="reason">5. Por tu manera de ver el mundo.</div>
+      <div class="reason">6. Por todo lo que he aprendido contigo.</div>
+      <div class="reason">7. Por las conversaciones que tenemos.</div>
+      <div class="reason">8. Por los recuerdos que estamos creando.</div>
+      <div class="reason">9. Porque quiero seguir creciendo a tu lado.</div>
+      <div class="reason">10. Porque, entre tantas personas, eres tú quien ocupa un lugar especial en mi corazón.</div>
+    </section>
+
+    <section>
+      <h2>Una canción para nosotros 🎶</h2>
+      <p>Hay canciones que dicen lo que a veces las palabras no pueden.</p>
+      <audio id="song" controls>
+        <source src="musica/nuestra-cancion.mp3" type="audio/mpeg">
+        Tu navegador no puede reproducir este audio.
+      </audio>
+      <p><small>Después añadiremos nuestra canción especial.</small></p>
+    </section>
+
+    <section>
+      <h2>Una carta para ti 💌</h2>
+      <p>Hay algo que quiero que leas con calma...</p>
+      <button onclick="document.getElementById('letter').style.display='block'; this.style.display='none'">
+        Abrir mi carta 🤍
+      </button>
+
+      <div id="letter">Mi niña 🤍,
+
+      Felices 10 meses, mi amor.
+
+      Quería hacer algo diferente para ti, algo que pudieras guardar y volver a mirar cuando me extrañes.
+
+      Aunque estemos lejos, quiero seguir creando recuerdos contigo, aprendiendo de nosotros y construyendo algo bonito. No todo tiene que ser perfecto para ser especial; para mí, lo importante es que sigamos eligiéndonos y cuidando lo nuestro.
+
+      Gracias por formar parte de mi vida y por cada momento que hemos compartido.
+
+      Ojalá pronto pueda abrazarte y decirte todo esto mirándote a los ojos.
+
+      Esto es solo una pequeña sorpresa para recordarte que eres muy importante para mí.
+
+      Te amo muchísimo. 🤍
+
+      Felices 10 meses, mi niña. 🤍</div>
+    </section>
+  </main>
+
+  <footer>
+    Hecho con amor, especialmente para Mi niña 🤍
+    <p>Por muchos recuerdos más juntos.</p>
+  </footer>
+</body>
+</html>
